@@ -50,6 +50,8 @@ exports.listAll = async (req, res) => {
 // använd param med den här routen
 exports.update = async (req, res) => {
   const post = req.post;
+  post.title = req.body.title;
+  post.content = req.body.content;
   post.save((err, data) => {
     if (err) {
       return res.status(400).json({ message: "error" });
