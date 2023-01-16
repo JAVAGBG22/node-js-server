@@ -1,5 +1,7 @@
 const mongoose = require("mongoose");
 
+// databas modell/schema
+
 const postSchema = new mongoose.Schema(
   {
     title: {

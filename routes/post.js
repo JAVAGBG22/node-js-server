@@ -26,6 +26,8 @@ router.put("/post/:postId", update);
 // remove post
 router.delete("/post/:postId", remove);
 
+// param för att hitta id för specifik post
+// används som en parameter i våra routes som kräver ett unikt id
 router.param("postId", postById);
 
 module.exports = router;
